@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Sitemap: http://bestroof.kh.ua/sitemap.xml
+Host: www.bestroof.kh.ua

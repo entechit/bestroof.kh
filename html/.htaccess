@@ -1,0 +1,17 @@
+# asu.biz.ua # asu.biz.ua # asu.biz.ua
+
+AddDefaultCharset UTF-8
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
+RewriteCond %{HTTP_HOST} ^www.bestroof.kh.ua$
+RewriteRule ^(.*)$ http://bestroof.kh.ua/$1 [R=301,L]
+
+
+#FileETag MTime Size
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 2 months"
+</IfModule>
